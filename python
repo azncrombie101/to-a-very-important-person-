@@ -1,0 +1,51 @@
+import random
+
+def make_sentence(start, middle, end, n=1):
+  
+        # this will shuffle the lists
+        random.shuffle(start)
+        random.shuffle(middle)
+        random.shuffle(end)
+        
+        # concatinate the parts of the sentences
+        list_of_sentences = []
+        for word in range(n):
+                try:
+                        list_of_sentences = start[word] + ' ' + middle[word] + ' ' + end[word]
+                        list_of_sentences = list_of_sentences.capitalize() + '. '
+                except IndexError:
+                        break
+        return list_of_sentences
+        
+#part1 of the sentence---noun/subject
+part1 = [
+        ]
+        
+#part2 of the sentence--the verb/action
+part2 = [
+        ]
+        
+#part3 of the sentence--the ending(noun)
+part3 = [ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] 
+
+
+list_of_sentences = make_sentence(part1, part2, part3)
+
+print list_of_sentences
